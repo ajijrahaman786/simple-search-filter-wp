@@ -1,0 +1,40 @@
+body {
+    font-family: system-ui;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  table {
+    margin: 0 auto;
+    position: relative;
+    border-collapse: collapse;
+    width: 644px;
+    
+  }
+
+  .search-bar input {
+    width: 50%;
+    border: 2px solid #f0f8ff;
+    }
+  
+  td {
+    border: 2px dashed skyblue;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  thead th {
+    text-align: left;
+    padding: 8px;
+    background: lavender;
+    max-width: 43%;
+  }
+  
+  thead {
+    top: 0;
+    position: sticky;
+  }
+  
+  tr:nth-child(even) {
+    background-color: aliceblue;
+  }
