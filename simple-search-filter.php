@@ -1,6 +1,6 @@
 <?php 
 /*
-Plugin Name:    Simple table of Search filter
+Plugin Name:    Simple table of Search filter(TSF)
 PLugin URI :    https://wordpress.org/plugins/simple-table-of-search-filter/
 Description:    The most universal filters plugin for filtering any data of the table.
 Version:        1.0.0
