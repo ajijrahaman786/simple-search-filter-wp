@@ -5,17 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Define the initial data array
   const dataArray = [
     { Flavor: "Vanilla", Brand: "Iced Creams", Calories: "240" },
-    {
-      Flavor: "Chocolate Delight",
-      Brand: "Brooklyn Creamery",
-      Calories: "320",
-    },
+    {Flavor:  "Chocolate Delight", Brand: "Brooklyn Creamery", Calories: "320",},
     { Flavor: "Caramel", Brand: "Brooklyn Creamery", Calories: "410" },
-    {
-      Flavor: "Strawberry Swirl",
-      Brand: "Natural Sweet Shop",
-      Calories: "200",
-    },
+    { Flavor: "Strawberry Swirl", Brand: "Natural Sweet Shop", Calories: "200",},
     { Flavor: "Mint Chip", Brand: "Brooklyn Creamery", Calories: "230" },
     { Flavor: "Butterscotch", Brand: "Iced Creams", Calories: "299" },
     { Flavor: "Hazelnut", Brand: "Iced Creams", Calories: "240" },
@@ -86,14 +78,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
         
       }
-
-
     });
-
   }
 
   searchInputData();
 
 
+
+  // addRow
+  const addRowElement = document.getElementById("addRow")
+  const delteRow = document.getElementById("deleteRow");
+
+  function addRow(){
+    addRowElement.addEventListener("click", function(){
+        const newRow = document.createElement("tr");
+        console.log(newRow);
+        tableHeaderElement.append(newRow);
+        const newth1 = document.createElement("th");
+        const newth2 = document.createElement("th");
+        const newth3 = document.createElement("th");
+        newRow.append(newth1, newth2, newth3);
   
+    });
+    
+    
+
+};
+
+addRow(dataArray);
+
+
+
 });
+

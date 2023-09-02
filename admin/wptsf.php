@@ -1,13 +1,20 @@
+<?php
+// Enqueue styles and scripts for the admin dashboard
+add_action('admin_enqueue_scripts', 'enqueue_admin_styles_and_scripts', 999);
+function enqueue_admin_styles_and_scripts() {
+    // Enqueue the stylesheet
+    wp_enqueue_style('admin-styles', plugin_dir_url(__FILE__) . '/admin/css/wptsf-style.css');
 
-    <h2>Ice Cream Collection</h2>
-    <div class="search-bar">
-        <input type="text" placeholder="Search" id="search-bar" value="">
-    </div>
-    <table id="table-wrapper">
-        <thead id="table-header-row">
+    // Enqueue the JavaScript
+    wp_enqueue_script('admin-scripts', plugin_dir_url(__FILE__) . '/admin/js/wptsf-plugin.js', array(), true);
+}
 
-        </thead>
-        <tbody id="table-body">
 
-        </tbody>
-    </table>
+
+
+
+
+
+
+?>
+   
